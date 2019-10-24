@@ -2,16 +2,15 @@
 #include<conio.h>
 void main()
 {
-clrscr();
-int k,j,no;
-printf("Enter Any No. :");
-scanf("%d",&no);
-while(k!=0)
-{
-k=no%10;
-no=no/10;
-j=j+k;
-}
-printf("Sum of each digit of given no. %d => %d",no,j);
-getch();
-}
+int n,sum=0,m;    
+printf("Enter a number:");    
+scanf("%d",&n);    
+while(n>0)    
+{    
+m=n%10;    
+sum=sum+m;    
+n=n/10;    
+}    
+printf("Sum is=%d",sum);    
+return 0;  
+}   
